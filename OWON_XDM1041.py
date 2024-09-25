@@ -6,28 +6,43 @@ class OWONXDM1041:
         self.serial_port = serial_port
         self.baud_rate = baud_rate
         self.timeout = timeout
+        self.ser = None  # serial initialized as None
 
     def open_serial_port(self):
-        return serial.Serial(self.serial_port, self.baud_rate, timeout=self.timeout)
+        if self.ser is None:  # open if not already open
+            try:
+                self.ser = serial.Serial(self.serial_port, self.baud_rate, timeout=self.timeout)
+                print(f"Serial port {self.serial_port} opened.")
+            except serial.SerialException as e:
+                print(f"Failed to open serial port: {e}")
+                self.ser = None  # Reset to None if there's an error
+        else:
+            print("Serial port is already open.")
+
+    def close_serial_port(self):
+        if self.ser is not None:
+            self.ser.close()
+            self.ser = None
+            print("Serial port closed.")
+        else:
+            print("Serial port is not open.")
 
     def query_instrument_id(self):
         try:
-            ser = self.open_serial_port()
-            command = b'*IDN?\n'  
-            ser.write(command)
-            time.sleep(3)  
-            response = ser.readline().strip()
-            response_text = response.decode('utf-8', errors='ignore').strip()
-            #print(f"{response_text}")
-            ser.close()  
-            return response_text
+            if self.ser:
+                command = b'*IDN?\n'
+                self.ser.write(command)
+                #time.sleep(3)
+                response = self.ser.readline().strip()
+                response_text = response.decode('utf-8', errors='ignore').strip()
+                return response_text
         except serial.SerialException as e:
-            print(f"Failed to open serial port: {e}")
+            print(f"Error during communication: {e}")
             return "None"
 
     def configure_dc_voltage(self):
         return self._configure_measurement(b'CONF:VOLT:DC AUTO\n')
-    
+
     def configure_capacitance(self):
         return self._configure_measurement(b'CONF:CAP AUTO\n')
 
@@ -54,23 +69,19 @@ class OWONXDM1041:
 
     def _configure_measurement(self, command):
         try:
-            ser = self.open_serial_port()
-            ser.write(command)
-            ser.close()
-            time.sleep(3)
+            if self.ser:
+                self.ser.write(command)
+                #time.sleep(3)
         except serial.SerialException as e:
-            return f"Failed to open serial port: {e}"
+            return f"Error during communication: {e}"
 
     def measure_value(self):
         try:
-            ser = self.open_serial_port()
-            command = b'MEAS:SHOW?\n'
-            ser.write(command)
-            response = ser.readline().strip()
-            response_text = response.decode('utf-8', errors='ignore').strip()
-            ser.close()
-            return response_text
+            if self.ser:
+                command = b'MEAS:SHOW?\n'
+                self.ser.write(command)
+                response = self.ser.readline().strip()
+                response_text = response.decode('utf-8', errors='ignore').strip()
+                return response_text
         except serial.SerialException as e:
-            return f"Failed to open serial port: {e}"
-
-
+            return f"Error during communication: {e}"
