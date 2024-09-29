@@ -1,0 +1,166 @@
+===== Script started =====
+Serial port opened
+'open_serial_port' executed in 0.0102 seconds
+Instrument ID: OWON,XDM1041,23362517,V4.2.0,3
+'get_instrument_id' executed in 0.0052 seconds
+Configured DC Voltage
+'configure_dc_voltage' executed in 3.0035 seconds
+Measured value: 0.0000VDC
+'measure_value' executed in 0.0078 seconds
+Configured Resistance
+'configure_resistance' executed in 3.0032 seconds
+Measured value: 269.08
+'measure_value' executed in 0.0048 seconds
+Measured value 1: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0046 seconds
+Measured value 2: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0049 seconds
+Measured value 3: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0048 seconds
+Measured value 4: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0047 seconds
+Measured value 5: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0046 seconds
+Measured value 6: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0047 seconds
+Measured value 7: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0047 seconds
+Measured value 8: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0046 seconds
+Measured value 9: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0047 seconds
+Measured value 10: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0050 seconds
+Measured value 11: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0045 seconds
+Measured value 12: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0048 seconds
+Measured value 13: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0046 seconds
+Measured value 14: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0049 seconds
+Measured value 15: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0048 seconds
+Measured value 16: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0049 seconds
+Measured value 17: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0048 seconds
+Measured value 18: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0050 seconds
+Measured value 19: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0048 seconds
+Measured value 20: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0048 seconds
+Measured value 21: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0045 seconds
+Measured value 22: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0052 seconds
+Measured value 23: 269.08
+Measured value: 269.08
+'measure_value' executed in 0.0050 seconds
+Measured value 24: 269.08
+Measured value: 269.09
+'measure_value' executed in 0.0558 seconds
+Measured value 25: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0051 seconds
+Measured value 26: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0050 seconds
+Measured value 27: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0048 seconds
+Measured value 28: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0049 seconds
+Measured value 29: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0047 seconds
+Measured value 30: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0050 seconds
+Measured value 31: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0047 seconds
+Measured value 32: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0047 seconds
+Measured value 33: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0050 seconds
+Measured value 34: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0047 seconds
+Measured value 35: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0046 seconds
+Measured value 36: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0046 seconds
+Measured value 37: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0047 seconds
+Measured value 38: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0046 seconds
+Measured value 39: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0049 seconds
+Measured value 40: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0051 seconds
+Measured value 41: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0050 seconds
+Measured value 42: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0050 seconds
+Measured value 43: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0051 seconds
+Measured value 44: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0161 seconds
+Measured value 45: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0049 seconds
+Measured value 46: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0050 seconds
+Measured value 47: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0051 seconds
+Measured value 48: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0046 seconds
+Measured value 49: 269.09
+Measured value: 269.09
+'measure_value' executed in 0.0046 seconds
+Measured value 50: 269.09
+For loop executed in 0.3131 seconds
+Serial port closed
+'close_serial_port' executed in 0.0007 seconds
+===== Total script execution time: 6.3451 seconds
+===== Script ended =====
