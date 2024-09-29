@@ -5,24 +5,23 @@ class OWONXDM1041:
     def __init__(self, serial_port='/dev/ttyUSB0', baud_rate=115200, timeout=5000):
         self.serial_port = serial_port
         self.baud_rate = baud_rate
-        self.timeout = timeout  # Set a longer timeout (in milliseconds)
-        # Use pyvisa-py as the backend and configure for a serial port
-        self.rm = pyvisa.ResourceManager('@py')
-        self.instr = None  # instrument initialized as None
+        self.timeout = timeout
+        self.rm = pyvisa.ResourceManager('@py') # visa-py backend to configure the port
+        self.instr = None 
 
     def open_serial_port(self):
         if self.instr is None:  # open if not already open
             try:
-                resource_address = f'ASRL{self.serial_port}::INSTR'  # Specify the serial resource in PyVISA format
+                resource_address = f'ASRL{self.serial_port}::INSTR'  # /dev/ttyUSB0
                 self.instr = self.rm.open_resource(resource_address)
-                self.instr.baud_rate = self.baud_rate  # Set baud rate
-                self.instr.timeout = self.timeout  # Set timeout in ms
-                self.instr.write_termination = '\n'  # Set write termination
-                self.instr.read_termination = '\n'  # Set read termination
+                self.instr.baud_rate = self.baud_rate 
+                self.instr.timeout = self.timeout 
+                self.instr.write_termination = '\n' 
+                self.instr.read_termination = '\n'
                 print(f"Serial port {self.serial_port} opened.")
             except pyvisa.VisaIOError as e:
                 print(f"Failed to open serial port: {e}")
-                self.instr = None  # Reset to None if there's an error
+                self.instr = None 
         else:
             print("Serial port is already open.")
 
@@ -38,10 +37,10 @@ class OWONXDM1041:
         try:
             if self.instr:
                 command = '*IDN?\n'
-                self.instr.write(command)  # Write the command
-                time.sleep(0.1)  # Add a small delay to allow instrument processing
-                response = self.instr.read_raw().strip()  # Use read_raw for binary data
-                response_text = response.decode('utf-8', errors='ignore').strip()  # Decode response
+                self.instr.write(command) 
+                time.sleep(0.1) 
+                response = self.instr.read_raw().strip()  
+                response_text = response.decode('utf-8', errors='ignore').strip() 
                 return response_text
         except pyvisa.VisaIOError as e:
             print(f"Error during communication: {e}")
@@ -78,7 +77,7 @@ class OWONXDM1041:
         try:
             if self.instr:
                 self.instr.write(command)
-                time.sleep(0.1)  # Add a small delay to allow instrument processing
+                time.sleep(0.1)  
         except pyvisa.VisaIOError as e:
             return f"Error during communication: {e}"
 
@@ -86,10 +85,9 @@ class OWONXDM1041:
         try:
             if self.instr:
                 command = 'MEAS:SHOW?\n'
-                self.instr.write(command)  # Write the command
-                time.sleep(0.5)  # Wait for the instrument to measure
-                response = self.instr.read_raw().strip()  # Use read_raw for binary data
-                response_text = response.decode('utf-8', errors='ignore').strip()  # Decode the response
-                return response_text
+                self.instr.write(command)  
+                time.sleep(0.5)  
+                response = self.instr.read_raw().strip() 
+                response_text = response.decode('utf-8', errors='ignore').strip()  
         except pyvisa.VisaIOError as e:
             return f"Error during communication: {e}"
