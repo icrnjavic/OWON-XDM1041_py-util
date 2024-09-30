@@ -1,76 +1,76 @@
 ===== Script started =====
 Serial port opened
-'open_serial_port' executed in 0.0162 seconds
+'open_serial_port' executed in 0.0163 seconds
 Instrument ID: OWON,XDM1041,23362517,V4.2.0,3
-'get_instrument_id' executed in 0.1017 seconds
+'get_instrument_id' executed in 0.1023 seconds
 Configured DC Voltage
-'configure_dc_voltage' executed in 3.1034 seconds
+'configure_dc_voltage' executed in 3.1027 seconds
 Measured value: None
-'measure_value' executed in 0.0051 seconds
+'measure_value' executed in 0.0050 seconds
 Configured Resistance
-'configure_resistance' executed in 3.1035 seconds
+'configure_resistance' executed in 3.1027 seconds
 Measured value: None
-'measure_value' executed in 0.0048 seconds
+'measure_value' executed in 0.0050 seconds
 Measured value 1: None
 Measured value: None
-'measure_value' executed in 0.0047 seconds
+'measure_value' executed in 0.0051 seconds
 Measured value 2: None
 Measured value: None
-'measure_value' executed in 0.0051 seconds
+'measure_value' executed in 0.0049 seconds
 Measured value 3: None
 Measured value: None
 'measure_value' executed in 0.0050 seconds
 Measured value 4: None
 Measured value: None
-'measure_value' executed in 0.0183 seconds
+'measure_value' executed in 0.0538 seconds
 Measured value 5: None
 Measured value: None
 'measure_value' executed in 0.0049 seconds
 Measured value 6: None
 Measured value: None
-'measure_value' executed in 0.0048 seconds
+'measure_value' executed in 0.0046 seconds
 Measured value 7: None
 Measured value: None
-'measure_value' executed in 0.0052 seconds
+'measure_value' executed in 0.0049 seconds
 Measured value 8: None
 Measured value: None
 'measure_value' executed in 0.0050 seconds
 Measured value 9: None
 Measured value: None
-'measure_value' executed in 0.0048 seconds
+'measure_value' executed in 0.0050 seconds
 Measured value 10: None
 Measured value: None
-'measure_value' executed in 0.0053 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 11: None
 Measured value: None
-'measure_value' executed in 0.0049 seconds
+'measure_value' executed in 0.0053 seconds
 Measured value 12: None
 Measured value: None
 'measure_value' executed in 0.0048 seconds
 Measured value 13: None
 Measured value: None
-'measure_value' executed in 0.0054 seconds
+'measure_value' executed in 0.0053 seconds
 Measured value 14: None
 Measured value: None
-'measure_value' executed in 0.0047 seconds
+'measure_value' executed in 0.0049 seconds
 Measured value 15: None
 Measured value: None
-'measure_value' executed in 0.0049 seconds
+'measure_value' executed in 0.0046 seconds
 Measured value 16: None
 Measured value: None
-'measure_value' executed in 0.0050 seconds
+'measure_value' executed in 0.0051 seconds
 Measured value 17: None
 Measured value: None
-'measure_value' executed in 0.0048 seconds
+'measure_value' executed in 0.0049 seconds
 Measured value 18: None
 Measured value: None
-'measure_value' executed in 0.0049 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 19: None
 Measured value: None
-'measure_value' executed in 0.0046 seconds
+'measure_value' executed in 0.0047 seconds
 Measured value 20: None
 Measured value: None
-'measure_value' executed in 0.0051 seconds
+'measure_value' executed in 0.0050 seconds
 Measured value 21: None
 Measured value: None
 'measure_value' executed in 0.0048 seconds
@@ -79,46 +79,46 @@ Measured value: None
 'measure_value' executed in 0.0051 seconds
 Measured value 23: None
 Measured value: None
-'measure_value' executed in 0.0051 seconds
+'measure_value' executed in 0.0055 seconds
 Measured value 24: None
 Measured value: None
-'measure_value' executed in 0.0049 seconds
+'measure_value' executed in 0.0147 seconds
 Measured value 25: None
 Measured value: None
-'measure_value' executed in 0.0056 seconds
+'measure_value' executed in 0.0046 seconds
 Measured value 26: None
 Measured value: None
-'measure_value' executed in 0.0054 seconds
+'measure_value' executed in 0.0050 seconds
 Measured value 27: None
 Measured value: None
-'measure_value' executed in 0.0048 seconds
+'measure_value' executed in 0.0047 seconds
 Measured value 28: None
 Measured value: None
-'measure_value' executed in 0.0052 seconds
+'measure_value' executed in 0.0047 seconds
 Measured value 29: None
 Measured value: None
-'measure_value' executed in 0.0054 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 30: None
 Measured value: None
-'measure_value' executed in 0.0190 seconds
+'measure_value' executed in 0.0049 seconds
 Measured value 31: None
 Measured value: None
-'measure_value' executed in 0.0052 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 32: None
 Measured value: None
-'measure_value' executed in 0.0050 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 33: None
 Measured value: None
-'measure_value' executed in 0.0047 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 34: None
 Measured value: None
-'measure_value' executed in 0.0048 seconds
+'measure_value' executed in 0.0052 seconds
 Measured value 35: None
 Measured value: None
-'measure_value' executed in 0.0049 seconds
+'measure_value' executed in 0.0052 seconds
 Measured value 36: None
 Measured value: None
-'measure_value' executed in 0.0051 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 37: None
 Measured value: None
 'measure_value' executed in 0.0049 seconds
@@ -127,40 +127,40 @@ Measured value: None
 'measure_value' executed in 0.0049 seconds
 Measured value 39: None
 Measured value: None
-'measure_value' executed in 0.0048 seconds
+'measure_value' executed in 0.0050 seconds
 Measured value 40: None
 Measured value: None
-'measure_value' executed in 0.0049 seconds
+'measure_value' executed in 0.0046 seconds
 Measured value 41: None
 Measured value: None
-'measure_value' executed in 0.0050 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 42: None
 Measured value: None
-'measure_value' executed in 0.0055 seconds
+'measure_value' executed in 0.0050 seconds
 Measured value 43: None
 Measured value: None
 'measure_value' executed in 0.0048 seconds
 Measured value 44: None
 Measured value: None
-'measure_value' executed in 0.0048 seconds
+'measure_value' executed in 0.0047 seconds
 Measured value 45: None
 Measured value: None
-'measure_value' executed in 0.0046 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 46: None
 Measured value: None
-'measure_value' executed in 0.0051 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 47: None
 Measured value: None
-'measure_value' executed in 0.0052 seconds
+'measure_value' executed in 0.0050 seconds
 Measured value 48: None
 Measured value: None
-'measure_value' executed in 0.0049 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 49: None
 Measured value: None
-'measure_value' executed in 0.0052 seconds
+'measure_value' executed in 0.0048 seconds
 Measured value 50: None
-For loop executed in 0.2865 seconds
+For loop executed in 0.3132 seconds
 Serial port closed
-'close_serial_port' executed in 0.0008 seconds
-===== Total script execution time: 6.6355 seconds
+'close_serial_port' executed in 0.0006 seconds
+===== Total script execution time: 6.6608 seconds
 ===== Script ended =====

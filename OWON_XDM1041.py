@@ -85,8 +85,7 @@ class OWONXDM1041:
         try:
             if self.instr:
                 command = 'MEAS:SHOW?\n'
-                self.instr.write(command)  
-                time.sleep(0.5)  
+                self.instr.write(command)
                 response = self.instr.read_raw().strip() 
                 response_text = response.decode('utf-8', errors='ignore').strip()  
         except pyvisa.VisaIOError as e:
