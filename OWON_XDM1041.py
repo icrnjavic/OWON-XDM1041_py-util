@@ -2,20 +2,20 @@ import serial
 import time
 
 class OWONXDM1041:
-    def __init__(self, serial_port='/dev/ttyUSB0', baud_rate=115200, timeout=1):
-        self.serial_port = serial_port
-        self.baud_rate = baud_rate
+    def __init__(self, serial_port=None, baud_rate=None, timeout=1):
+        self.serial_port = serial_port or '/dev/ttyUSB0'  # defaults to '/dev/ttyUSB0'
+        self.baud_rate = baud_rate or 115200  # defaults to 115200
         self.timeout = timeout
-        self.ser = None  # serial initialized as None
+        self.ser = None 
 
     def open_serial_port(self):
-        if self.ser is None:  # open if not already open
+        if self.ser is None:
             try:
                 self.ser = serial.Serial(self.serial_port, self.baud_rate, timeout=self.timeout)
-                print(f"Serial port {self.serial_port} opened.")
+                print(f"Serial port {self.serial_port} opened at baud rate {self.baud_rate}.")
             except serial.SerialException as e:
                 print(f"Failed to open serial port: {e}")
-                self.ser = None  # Reset to None if there's an error
+                self.ser = None
         else:
             print("Serial port is already open.")
 
@@ -32,7 +32,6 @@ class OWONXDM1041:
             if self.ser:
                 command = b'*IDN?\n'
                 self.ser.write(command)
-                #time.sleep(3)
                 response = self.ser.readline().strip()
                 response_text = response.decode('utf-8', errors='ignore').strip()
                 return response_text
@@ -71,7 +70,6 @@ class OWONXDM1041:
         try:
             if self.ser:
                 self.ser.write(command)
-                #time.sleep(3)
         except serial.SerialException as e:
             return f"Error during communication: {e}"
 

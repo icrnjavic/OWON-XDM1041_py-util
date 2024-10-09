@@ -3,7 +3,7 @@ from OWON_XDM1041 import OWONXDM1041
 
 # logging function
 def log_output(message):
-    with open("pyvisa_log5.txt", "a") as log_file:
+    with open("log.txt", "a") as log_file:
         log_file.write(message + "\n")
 
 # time cop with logging
@@ -61,7 +61,10 @@ if __name__ == "__main__":
     total_start_time = time.time()
     log_output("===== Script started =====")
 
-    multimeter = OWONXDM1041()  # "/dev/ttyUSB0"
+    serial_port = '/dev/ttyUSB0'
+    baud_rate = 115200
+
+    multimeter = OWONXDM1041(serial_port=serial_port, baud_rate=baud_rate)
     open_serial_port(multimeter)
     
     instrument_id = get_instrument_id(multimeter)
